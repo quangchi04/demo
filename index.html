@@ -14,11 +14,12 @@
     <div class="top-bar">
       <span>| LOGIN | REGISTER | MY CAR </span>
     </div>
+
     <div class="title">
       <h1>SUITE PIECES</h1>
     </div>
-
-    <nav class="menu">
+    <button class="menu-mobile" id="menuMobile" type="button">Menu</button>
+    <nav class="menu" id="mainMenu">
       <a href="#" class="yelow">PAINT</a>
       <a href="#">PAINT SUPPLIES</a>
       <a href="#">VINTAGE WARES</a>
@@ -113,5 +114,15 @@
         </article>
       </section>
     </footer>
+    <script>
+      var menuMobile = document.getElementById("menuMobile");
+      var mainMenu   = document.getElementById("mainMenu");
+      if (menuMobile && mainMenu ){
+        menuMobile.addEventListener("click", function(){
+        mainMenu.classList.toggle("menu-show");
+      });
+      }
+      
+    </script>
   </body>
 </html>

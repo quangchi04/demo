@@ -198,4 +198,27 @@ a {
   .site-footer article:last-child {
     border-bottom: none;
   }
+
+  .menu-mobile{
+    display: block;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    background: #394300;
+    color: white;
+  }
+  .menu{
+    display: none;
+    flex-direction: column;
+  }
+  .menu.menu-show {
+    display: flex;
+  }
+
 } 
+@media (min-width: 481px) {
+  .menu-mobile {
+    display: none;
+  }
+}
